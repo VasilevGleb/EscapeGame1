@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#game {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.835);
+}
+
+#scene-text {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#actions {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+#switch {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    border-radius: 7px;
+}
