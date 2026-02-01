@@ -57,6 +57,9 @@ buttons.forEach(button => {
                 updateButtonVisibility()
 
             }
+            else if (action === "1" && gameState.door === "open") {
+                typeText("Door is already open")
+            }
             else if (action === "1" && !inventory.includes("key")) {
                 typeText("You need a key to open this door")
                 console.log("Need key")
@@ -77,8 +80,13 @@ buttons.forEach(button => {
                 console.log(inventory)
                 updateButtonVisibility()
             }
+
+            else if (action === "5" && gameState.door === "open") {
+                scene = "hall"
+                typeText("You go out in hall. There is nobody.")
+                console(scene)
+            }
         }
 
     })
 })
-//  scene = "hall"
