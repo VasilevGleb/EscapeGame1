@@ -10,9 +10,16 @@
 
 <body>
     <div id="game">
+
         <div id="scene-text">
 
         </div>
+
+        <div id="terminal" class="hidden">
+            <span class="prompt">CODE &gt;</span>
+            <input id="terminal-input" type="text" autocomplete="off">
+        </div>
+
         <div id="actions">
             <div id="door">
                 <button data-action="1" class="hidden">Door</button>
@@ -26,14 +33,16 @@
                 <button data-action="4" class="hidden">Open</button>
             </div>
 
-            <div id="nextRoom">
-                <button data-action="5" class="hidden">Go out</button>
-            </div>
-
             <div id="inventory">
                 <button data-action="3" class="hidden">Inventory</button>
             </div>
-            <script src="scripts/script1.js"></script>
+
+            <div id="nextRoom">
+                <button id="goOut" data-action="5" class="hidden">Go out</button>
+            </div>
+
+
+            <script src="scripts/script2.js"></script>
         </div>
     </div>
 </body>
